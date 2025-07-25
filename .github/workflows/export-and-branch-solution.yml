@@ -45,7 +45,7 @@ jobs:
         lfs: true
 
     - name: Install Power Platform CLI
-      uses: microsoft/powerplatform-actions/actions-install@v1
+      uses: microsoft/powerplatform-actions/actions-install@v1.9.1
 
     - name: Verify Environment Variables
       run: |
@@ -58,7 +58,7 @@ jobs:
       shell: pwsh
 
     - name: who-am-i action
-      uses: microsoft/powerplatform-actions/who-am-i@v1
+      uses: microsoft/powerplatform-actions/who-am-i@v1.9.1
       with:
         environment-url: ${{env.ENVIRONMENT_URL}}
         app-id: ${{env.CLIENT_ID}}
@@ -67,7 +67,7 @@ jobs:
 
 
     - name: export-solution action
-      uses: microsoft/powerplatform-actions/export-solution@v1
+      uses: microsoft/powerplatform-actions/export-solution@v1.9.1
       with:
         environment-url: ${{env.ENVIRONMENT_URL}}
         app-id: ${{env.CLIENT_ID}}
@@ -77,7 +77,7 @@ jobs:
         solution-output-file: ${{ github.event.inputs.solution_exported_folder}}/${{ github.event.inputs.solution_name }}.zip
 
     - name: unpack-solution action
-      uses: microsoft/powerplatform-actions/unpack-solution@v1
+      uses: microsoft/powerplatform-actions/unpack-solution@v1.9.1
       with:
         solution-file: ${{ github.event.inputs.solution_exported_folder}}/${{ github.event.inputs.solution_name }}.zip
         solution-folder: ${{ github.event.inputs.solution_folder}}/${{ github.event.inputs.solution_name }}
@@ -85,7 +85,7 @@ jobs:
         overwrite-files: true
 
     - name: branch-solution, prepare it for a PullRequest
-      uses: microsoft/powerplatform-actions/branch-solution@v1
+      uses: microsoft/powerplatform-actions/branch-solution@v1.9.1
       with:
         solution-folder: ${{ github.event.inputs.solution_folder}}/${{ github.event.inputs.solution_name }}
         solution-target-folder: ${{ github.event.inputs.solution_target_folder}}/${{ github.event.inputs.solution_name }}
