@@ -1,0 +1,22 @@
+name: Pack pack-solution
+
+on:
+  push:
+    paths:
+      - contents/**
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: microsoft/powerplatform-actions/pack-solution@v1
+        with:
+          solution-file: out/brwi_solution.zip
+          solution-folder: contents
+          solution-type: Both
+      - uses: actions/upload-artifact@v2
+        with:
+          name: packed-solution
+          path: out/
