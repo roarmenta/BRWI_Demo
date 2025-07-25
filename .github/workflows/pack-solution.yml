@@ -11,7 +11,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: microsoft/powerplatform-actions/pack-solution@v1
+      - uses: microsoft/powerplatform-actions/pack-solution@v1.9.1
         with:
           solution-file: out/brwi_solution.zip
           solution-folder: contents
