@@ -19,7 +19,7 @@ jobs:
         with:
           solution-file: out/brwi_solution.zip
           solution-folder: solutions/BRWISolution
-          solution-type: Unmanged
+          solution-type: Unmanaged
       - uses: actions/upload-artifact@v4.6.2
         with:
           name: packed-solution
