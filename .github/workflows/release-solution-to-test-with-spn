@@ -30,7 +30,6 @@ on:
        default: out/release
   release:
     types: [created]
-  
 
 env:
 #edit your values here
