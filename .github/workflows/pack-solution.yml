@@ -2,9 +2,9 @@ name: Pack BRWI Solution
 description: This workflow packs the BRWI solution into a zip file.
 
 on:
-  push:
-    paths:
-      - solutions/BRWISolution/**
+  #push:
+    #paths:
+      #- solutions/BRWISolution/**
   workflow_dispatch:
 
 jobs:
