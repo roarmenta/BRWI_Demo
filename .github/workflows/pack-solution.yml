@@ -3,7 +3,7 @@ name: Pack pack-solution
 on:
   push:
     paths:
-      - contents/**
+      - solutions/BRWISolution/**
   workflow_dispatch:
 
 jobs:
