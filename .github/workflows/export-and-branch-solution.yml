@@ -1,4 +1,6 @@
-name: export-and-branch-solution
+name: Export and Branch BRWI Solution
+description: This workflow exports the BRWI solution from DEV, unpacks it, and prepares a branch for changes.
+# This workflow is designed to export a solution from the Power Platform DEV environment,
 # Export solution from DEV environment
 #  unpack it and prepare, commit and push a git branch with the changes
 
