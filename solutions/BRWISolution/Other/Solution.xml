@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.25064.184" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25064.184" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25064.00184">
+<ImportExportXml version="9.2.25072.226" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25072.226" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25072.00226">
   <SolutionManifest>
     <UniqueName>BRWISolution</UniqueName>
     <LocalizedNames>
@@ -80,6 +80,9 @@
       </Addresses>
     </Publisher>
     <RootComponents>
+      <RootComponent type="1" schemaName="roar_department" behavior="0" />
+      <RootComponent type="1" schemaName="roar_project" behavior="0" />
+      <RootComponent type="1" schemaName="roar_user" behavior="0" />
       <RootComponent type="300" schemaName="roar_brwiapp_65355" behavior="0" />
     </RootComponents>
     <MissingDependencies />

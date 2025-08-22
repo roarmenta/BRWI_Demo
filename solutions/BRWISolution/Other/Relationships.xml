@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_roar_department" />
+  <EntityRelationship Name="business_unit_roar_project" />
+  <EntityRelationship Name="business_unit_roar_user" />
+  <EntityRelationship Name="lk_roar_department_createdby" />
+  <EntityRelationship Name="lk_roar_department_modifiedby" />
+  <EntityRelationship Name="lk_roar_project_createdby" />
+  <EntityRelationship Name="lk_roar_project_modifiedby" />
+  <EntityRelationship Name="lk_roar_user_createdby" />
+  <EntityRelationship Name="lk_roar_user_modifiedby" />
+  <EntityRelationship Name="owner_roar_department" />
+  <EntityRelationship Name="owner_roar_project" />
+  <EntityRelationship Name="owner_roar_user" />
+  <EntityRelationship Name="roar_Project_roar_User" />
+  <EntityRelationship Name="roar_User_roar_Department" />
+  <EntityRelationship Name="team_roar_department" />
+  <EntityRelationship Name="team_roar_project" />
+  <EntityRelationship Name="team_roar_user" />
+  <EntityRelationship Name="user_roar_department" />
+  <EntityRelationship Name="user_roar_project" />
+  <EntityRelationship Name="user_roar_user" />
+</EntityRelationships>
