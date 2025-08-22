@@ -61,6 +61,9 @@ jobs:
       with:
         lfs: true
 
+    - name: Install Power Platform CLI
+      uses: microsoft/powerplatform-actions/actions-install@v1.9.1
+
     - name: Pack solution
       uses: microsoft/powerplatform-actions/pack-solution@v0
       with:
@@ -91,7 +94,7 @@ jobs:
         solution-output-file: ${{ inputs.solution_shipping_folder}}/${{ inputs.solution_name }}_managed.zip
 
     - name: Upload the ready to ship solution to GH artifact store
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: managedSolutions
         path: ${{ inputs.solution_shipping_folder}}/
@@ -103,17 +106,20 @@ jobs:
       RUNNER_DEBUG: 1
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4.2.2
       with:
         lfs: true
+    
+    - name: Install Power Platform CLI
+      uses: microsoft/powerplatform-actions/actions-install@v1.9.1
 
     - name: Fetch the ready to ship solution from GH artifact store
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: managedSolutions
         path: ${{ inputs.solution_release_folder}}
     - name: Import solution to prod env
-      uses: microsoft/powerplatform-actions/import-solution@v0
+      uses: microsoft/powerplatform-actions/import-solution@v1.9.1
       with:
         environment-url: ${{inputs.PRODUCTION_ENVIRONMENT_URL}}
         app-id: ${{inputs.CLIENT_ID}}
