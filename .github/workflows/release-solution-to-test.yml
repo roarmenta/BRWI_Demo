@@ -53,6 +53,9 @@ jobs:
       with:
         lfs: true
 
+    - name: Install Power Platform CLI
+      uses: microsoft/powerplatform-actions/actions-install@v1.9.1
+
     - name: Pack solution
       uses: microsoft/powerplatform-actions/pack-solution@v1.9.1
       with:
@@ -95,12 +98,12 @@ jobs:
       RUNNER_DEBUG: 1
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4.2.2
       with:
         lfs: true
 
     - name: Fetch the ready to ship solution from GH artifact store
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.2.2
       with:
         name: managedSolutions
         path: ${{ github.event.inputs.solution_release_folder}}
