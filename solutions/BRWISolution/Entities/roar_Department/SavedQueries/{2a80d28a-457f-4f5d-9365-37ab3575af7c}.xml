@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{2a80d28a-457f-4f5d-9365-37ab3575af7c}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="roar_departmentname" select="1" icon="1" preview="1">
+        <row name="result" id="roar_departmentid">
+          <cell name="roar_departmentname" width="300" />
+          <cell name="roar_phone" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="roar_department">
+          <attribute name="roar_departmentid" />
+          <attribute name="roar_departmentname" />
+          <attribute name="createdon" />
+          <order attribute="roar_departmentname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="roar_phone" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Departments" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

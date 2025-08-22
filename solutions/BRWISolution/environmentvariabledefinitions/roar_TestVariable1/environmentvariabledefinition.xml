@@ -1,0 +1,14 @@
+<environmentvariabledefinition schemaname="roar_TestVariable1">
+  <defaultvalue>yes</defaultvalue>
+  <description default="This is a test variable for BRWI app.">
+    <label description="This is a test variable for BRWI app." languagecode="1033" />
+  </description>
+  <displayname default="TestVariable1">
+    <label description="TestVariable1" languagecode="1033" />
+  </displayname>
+  <introducedversion>1.0.0.0</introducedversion>
+  <iscustomizable>1</iscustomizable>
+  <isrequired>0</isrequired>
+  <secretstore>0</secretstore>
+  <type>100000002</type>
+</environmentvariabledefinition>

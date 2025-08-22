@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{2e5dc539-4c87-4461-89b1-6dcb6ac6907b}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{0dbc4137-0eb2-44c7-b4e4-78c72b62180a}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{e918401e-2abe-4f80-acbe-6e3b32eb3a41}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0bd608bc-3c53-4c60-8a6c-01167f6b1dd6}">
+                        <labels>
+                          <label description="User Name" languagecode="1033" />
+                        </labels>
+                        <control id="roar_username" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="roar_username" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{60c629a4-5a01-4d87-bbc4-28517b67e5c8}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0fe06cae-09ed-4f69-9f3f-e2c82b1f51ea}">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                        </labels>
+                        <control id="roar_email" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="roar_email" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ce21a0ff-90aa-4ed9-8078-61fce950ac88}">
+                        <labels>
+                          <label description="Department" languagecode="1033" />
+                        </labels>
+                        <control id="roar_departmentid" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="roar_departmentid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>
