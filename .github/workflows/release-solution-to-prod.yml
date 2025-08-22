@@ -9,13 +9,13 @@ permissions:
   contents: write
 jobs:
   Release-solution-BRWISolution:
-    uses: ./.github/workflows/release-solution-to-test-with-spn.yml
+    uses: ./.github/workflows/release-solution-with-inputs.yml
     with:
       #You can specify the solution name here
       solution_name: BRWISolution
       #Update your values here
       BUILD_ENVIRONMENT_URL: 'https://roar-brwi-dev.crm.dynamics.com/'
-      TEST_ENVIRONMENT_URL: 'https://roar-brwi-test.crm.dynamics.com/'
+      TEST_ENVIRONMENT_URL: 'https://roar-brwi-prod.crm.dynamics.com/'
       CLIENT_ID: '01fa8c0f-e434-4909-a248-4e34f6a2ef36'
       TENANT_ID: '68fada1a-be1c-4dff-a018-be23fb5b8ea6'
     secrets:
